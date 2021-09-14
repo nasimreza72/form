@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <script src="https://kit.fontawesome.com/036af41ea5.js" crossorigin="anonymous"></script>
+    <style>
+        *{
+            margin: 0%;
+            color: white;
+            font-family: Arial, fo;
+            box-sizing: border-box;
+        }
+        
+        body{
+            background-image: url(https://images.unsplash.com/photo-1621689912979-5d475cfd3cd8?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80);
+            background-size: cover;
+            height: 100vh;
+        }
+
+        .center{
+            width: 25vw;
+            height: 30vh;
+            margin: auto;
+            text-align: center;
+            margin-top: 50vh;
+            transform: translateY(-50%);
+        }
+        input{
+            border: none;
+            background-color: transparent;
+            border-bottom: 1.8px solid rgb(125, 170, 228);
+            width: 25vw;
+            margin-top: 30px;
+            font-size: large;
+            font-weight: bold;
+            color: white;
+        }
+
+        input::placeholder{
+            font-family: Arial, Helvetica, sans-serif, "Font Awesome 5 Free";
+            font-weight: 900;
+            color: white;
+        }
+        
+        input:focus{
+            outline: none;
+        }
+
+        
+
+        button{
+            border: 2px solid rgb(125, 170, 228);
+            padding: 8px;
+            margin-top: 45px;
+            width: 25vw;
+            background-color: transparent;
+            font-size: large;
+            font-weight: bold;
+    
+            
+        }
+
+        h1{
+            margin-bottom: 10px;
+            font-size: 40px;
+        }
+
+        hr{
+            border: 2px solid rgb(125, 170, 228);
+            border-radius: 10px;
+        }
+
+
+
+        img{
+            width: 2rem;
+            position: absolute;
+            top: 8.2vw;
+            z-index:-1 ;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="center">
+        <form action="/action_page.php" method="post">
+            <h1>Login</h1>
+            <hr>
+
+            <div class="container">
+                <label for="email"></label><br>
+                <input type="email" placeholder="@ Your email...."> <br>
+                <label for="password"></label>
+                <input type="password" placeholder="&#xf023; Your password...." > <br>
+
+                <button type="submit">Sign in</button>
+            </div>
+
+        
+        </form>
+
+    </div>
+
+    
+</body>
+</html>
